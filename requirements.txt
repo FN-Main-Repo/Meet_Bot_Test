@@ -1,0 +1,39 @@
+# Mochan MVP - Voice Assistant Dependencies
+
+# Core async
+aiohttp>=3.9.0
+
+# WebSocket
+websockets>=12.0
+
+# Groq (LLM + Whisper STT) - FREE tier
+groq>=0.4.0
+
+# Audio processing
+numpy>=1.24.0
+scipy>=1.11.0
+
+# Environment
+python-dotenv>=1.0.0
+
+# HTTP client
+httpx>=0.25.0
+
+# Edge TTS (FREE, no API key needed)
+edge-tts>=7.0.0
+
+# Svara TTS / Orpheus Architecture
+snac>=1.1.0
+transformers>=4.40.0
+torch>=2.2.0
+torchaudio>=2.2.0
+
+# Optional: Audio playback for local testing
+# pip install sounddevice soundfile
+# sounddevice>=0.4.6
+# soundfile>=0.12.0
+
+# Optional: Audio-based emotion detection (wav2vec2)
+# pip install transformers torch
+# transformers>=4.35.0
+# torch>=2.0.0

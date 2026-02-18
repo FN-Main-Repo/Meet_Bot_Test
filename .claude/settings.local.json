@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(python3 -c \" import json, re with open\\(''/private/tmp/claude-501/-Users-vatsal-Downloads-Codebase-voice-test-harness/tasks/aafd59d.output''\\) as f: content = f.read\\(\\) # Find the main research report text block texts = re.findall\\(r''\"\"text\"\":\"\"\\(\\(?:[^\"\"\\\\\\\\]|\\\\\\\\.\\)*\\)\"\"'', content\\) long_texts = [t for t in texts if len\\(t\\) > 500] # Print the longest ones \\(likely the report sections\\) for i, t in enumerate\\(long_texts\\): if any\\(kw in t.lower\\(\\) for kw in [''vllm'', ''orpheus.*server'', ''streaming api'', ''community.*server'', ''quantiz'', ''modal'', ''serverless'', ''sentence.*split'', ''hinglish'']\\): print\\(f''--- TEXT BLOCK {i} \\(len={len\\(t\\)}\\) ---''\\) # Unescape unescaped = t.encode\\(\\).decode\\(''unicode_escape'', errors=''replace''\\)[:2000] print\\(unescaped\\) print\\(\\) \")",
+      "Bash(python3:*)",
+      "WebFetch(domain:docs.meetstream.ai)",
+      "WebFetch(domain:blog.meetstream.ai)"
+    ]
+  }
+}
